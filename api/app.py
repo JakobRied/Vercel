@@ -83,6 +83,3 @@ def result(filename):
     
     return render_template("mobile-invalid.html", filename=filenameEdited, number=number)
     
-if __name__=="__main__":
-    context = ('cert.pem', 'key.pem') #Location of certificate & key
-    app.run(port=5000, ssl_context=context, host='0.0.0.0', debug=True) #Specify variable to run function
